@@ -31,6 +31,9 @@ function dateDiff() {
     document.getElementById("days").innerHTML = commafy(Math.ceil((today.getTime() - created.getTime()) / (one_day))) + x;
     document.getElementById("weeks").innerHTML = commafy(Math.ceil((today.getTime() - created.getTime()) / (one_week))) + y;
 
+    var months = moment(20150831, "YYYYMMDD").fromNow(true); 
+    document.getElementById("months").innerHTML = months;
+
     setTimeout(function() {
         dateDiff();
     }, 1000);
