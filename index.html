@@ -1,42 +1,35 @@
 <!DOCTYPE html>
-<html >
-  <head>
+<html>
+
+<head>
     <meta charset="UTF-8">
     <title>Time since Cadence was born</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-    
-        <link rel="stylesheet" href="css/style.css">
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js'></script>
+</head>
 
-    
-    
-    
-  </head>
-
-  <body>
+<body>
 
     <div class="wrap">
-  <h2>Time since <br>Cadence was born <small>08/31/2015 4PM</small></h2>
-  <span class="heartbeat">Loading...</span>
-  <p id="secs"></p>
-  <p id="mins"></p>
-  <p id="hours"></p>
-  <p id="days"></p>
-  <p id="weeks"></p>
-  <p id="months"></p>
-</div>
-<script>
-   document.addEventListener("DOMContentLoaded", function(event) {
-    document.getElementsByTagName("body")[0].className+='loaded'
-  })
-</script>
-    
-        <script src="js/index.js"></script>
+        <h2>Time since <br>Cadence was born <small>08/31/2015 4PM (<span id="total_age"></span>)</small></h2>
+        <span class="heartbeat">Loading...</span>
+        <p id="secs"></p>
+        <p id="mins"></p>
+        <p id="hours"></p>
+        <p id="days"></p>
+        <p id="weeks"></p>
+        <p id="months"></p>
+        <p id="years"></p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            document.getElementsByTagName("body")[0].className += 'loaded'
+        })
+    </script>
 
-    
-    
-    
-  </body>
+    <script src="js/index.js"></script>
+
+</body>
+
 </html>
